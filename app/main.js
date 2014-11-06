@@ -2,19 +2,14 @@ function nameCheck(name){
 	return 'Your name is ' + name + '!';
 }
 
+function nameCheer(name){
+	var nameArray = name.split('');
+	var cheersArray = nameArray.map(function(letter){
+		return 'Give me a...' + letter + '!'
+	});
+	return cheersArray.join('\n');
+}
 
-
-
-
-/*$('#li').click(function(){
-		cheerName($p, optionValue);
-	$(document).on('click', 'li', function(){
-	});*/
-
-
-
-//code for what's your name
-//
-//
-//
-//code for splitting string into 
+function postCheer(name){
+	return 'Risse is GREAT!';
+}
